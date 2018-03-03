@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int main(void)
+/* program to find the smallest number that can be cleanly divided from the
+   number 1 to n */
+
+int main(int ac, char **av)
 {
-	const unsigned int n = 20;
+	const unsigned int n = atoi(av[1]);
 	unsigned int i = 2;
 	unsigned int j = 2;
 	unsigned int end = 1;

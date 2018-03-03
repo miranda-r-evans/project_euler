@@ -1,13 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-/* find the sum of natural numbers less than 1000 */
+/* find the sum of natural numbers less than n */
 
-int main(void)
+int main(int ac, char **av)
 {
 	unsigned int sum = 0;
 	unsigned int i;
 	unsigned int j;
-	const unsigned int n = 1000;
+	const unsigned int n = atoi(av[1]);
 
 	for (i = 3; i < n; i += 3)
 	{
